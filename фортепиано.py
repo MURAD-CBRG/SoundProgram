@@ -9,13 +9,13 @@ class MyWidget(QMainWindow):
         super().__init__()
         uic.loadUi('фортепиано.ui', self)
 
-        self.do_1.clicked.connect(self.f1)
-        self.re.clicked.connect(self.f2)
-        self.mi.clicked.connect(self.f3)
-        self.fa.clicked.connect(self.f4)
-        self.sol.clicked.connect(self.f5)
-        self.lya.clicked.connect(self.f6)
-        self.si.clicked.connect(self.f7)
+        self.do_1.clicked.connect(self.sound1)
+        self.re.clicked.connect(self.sound2)
+        self.mi.clicked.connect(self.sound3)
+        self.fa.clicked.connect(self.sound4)
+        self.sol.clicked.connect(self.sound5)
+        self.lya.clicked.connect(self.sound6)
+        self.si.clicked.connect(self.sound7)
 
     def load_mp3(self, filename):
         media = QtCore.QUrl.fromLocalFile(filename)
